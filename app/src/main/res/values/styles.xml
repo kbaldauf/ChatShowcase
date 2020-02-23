@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ChatText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">@dimen/chat_text_max_width</item>
+        <item name="android:padding">@dimen/chat_text_padding</item>
+        <item name="android:textSize">@dimen/chat_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/chat_text_line_spacing_extra</item>
+        <item name="android:letterSpacing">@dimen/chat_text_letter_spacing</item>
+    </style>
+
+    <style name="ChatDate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/chat_date_margin_top</item>
+        <item name="android:textSize">@dimen/chat_date_text_size</item>
+    </style>
+
+</resources>

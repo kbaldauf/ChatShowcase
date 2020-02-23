@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_chat_toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/messageBar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/messageBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/chat_camera_margin_start"
+            android:layout_marginEnd="@dimen/chat_camera_margin_end"
+            android:src="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/galleryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/chat_gallery_margin_end"
+            android:src="@drawable/ic_gallery" />
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chat_input_margin_vertical"
+            android:layout_marginBottom="@dimen/chat_input_margin_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_field"
+            android:hint="@string/input_field_hint"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+            android:maxLines="3"
+            android:padding="@dimen/chat_input_padding" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/chat_send_margin_start"
+            android:layout_marginEnd="@dimen/chat_send_margin_end"
+            android:src="@drawable/ic_send_button" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

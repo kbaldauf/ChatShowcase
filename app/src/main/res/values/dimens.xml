@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_input_padding">10dp</dimen>
+    <dimen name="chat_input_margin_vertical">5dp</dimen>
+    <dimen name="chat_send_margin_start">9dp</dimen>
+    <dimen name="chat_send_margin_end">10dp</dimen>
+    <dimen name="chat_camera_margin_start">18dp</dimen>
+    <dimen name="chat_camera_margin_end">20dp</dimen>
+    <dimen name="chat_gallery_margin_end">17dp</dimen>
+
+    <dimen name="chat_message_background_margin">5dp</dimen>
+    <dimen name="chat_text_max_width">294dp</dimen>
+    <dimen name="chat_text_margin">10dp</dimen>
+    <dimen name="chat_text_padding">10dp</dimen>
+    <dimen name="chat_text_size">14sp</dimen>
+    <dimen name="chat_text_line_spacing_extra">5sp</dimen>
+    <dimen name="chat_text_letter_spacing">0.01</dimen>
+    <dimen name="chat_date_text_size">10sp</dimen>
+    <dimen name="chat_date_margin_top">1dp</dimen>
+
+    <dimen name="toolbar_button_padding">12dp</dimen>
+    <dimen name="toolbar_avatar_margin_start">5dp</dimen>
+    <dimen name="toolbar_title_margin_start">14dp</dimen>
+    <dimen name="toolbar_title_text_size">14sp</dimen>
+</resources>

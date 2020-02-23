@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#e8e9e8</color>
+
+    <color name="chat_message_text_color">#f0f5fa</color>
+    <color name="chat_response_text_color">#141414</color>
+</resources>
